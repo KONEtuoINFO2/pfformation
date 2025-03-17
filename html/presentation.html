@@ -1,0 +1,278 @@
+<div class="product-card">
+  <img src="image-produit.jpg" alt="Produit" class="product-image">
+  <h3 class="product-title">Nom du Produit</h3>
+  <p class="product-description">
+    Une description courte et attrayante de votre produit. Mettez en avant ses points forts !
+  </p>
+  <p class="product-price">5.000 FCFA</p>
+  <button class="product-btn">Ajouter au panier</button>
+</div>
+
+<style>
+  .product-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .product-title {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+
+  .product-description {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+  }
+
+  .product-price {
+    font-size: 16px;
+    color: #009688;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .product-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #009688;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .product-btn:hover {
+    background-color: #00796b;
+  }
+</style>
+
+<div class="p">
+    <img src="./images/p9.avif" alt="Produit" class="product-image">
+    <button class="product-button" onclick="SubmitEvent()">Commandez ici</button>
+</div>
+
+<style>
+  /* Style pour le conteneur */
+  .p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Style pour l'image */
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  /* Style pour le bouton */
+  .product-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .product-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+
+
+<div class="p">
+    <img src="./images/p9.avif" alt="Produit" class="product-image">
+    <div class="product-description">
+      Ceci est une courte description du produit. Mettez en avant ses caractéristiques principales !
+    </div>
+    <button class="product-button" onclick="SubmitEvent()">Commandez ici</button>
+  </div>
+  
+  <style>
+    /* Conteneur principal */
+    .p {
+      position: relative;
+      width: 300px;
+      margin: 20px auto;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      background-color: #fff;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+  
+    .p:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  
+    /* Image du produit */
+    .product-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    /* Description du produit (par défaut invisible) */
+    .product-description {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      font-size: 14px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s;
+      text-align: center;
+      border-radius: 5px;
+    }
+  
+    /* Affichage de la description au survol */
+    .p:hover .product-description {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    /* Bouton de commande */
+    .product-button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  
+    .product-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+
+<div class="p">
+    <img src="./images/p9.avif" alt="Produit" class="product-image">
+    <div class="product-description">
+      Ceci est une courte description du produit. Mettez en avant ses caractéristiques principales !
+    </div>
+    <button class="product-button" onclick="SubmitEvent()">Commandez ici</button>
+  </div>
+  
+  <style>
+    /* Conteneur principal */
+    .p {
+      position: relative;
+      width: 300px;
+      margin: 20px auto;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      background-color: #fff;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+  
+    .p:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  
+    /* Image du produit */
+    .product-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    /* Description du produit (par défaut invisible) */
+    .product-description {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: orange; /* Fond orange pour la description */
+      color: #fff;
+      font-size: 14px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s;
+      text-align: center;
+      border-radius: 5px;
+    }
+  
+    /* Affichage de la description au survol */
+    .p:hover .product-description {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    /* Bouton de commande */
+    .product-button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: orange; /* Bouton orange */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  
+    .product-button:hover {
+      background-color: #cc7700; /* Orange plus foncé au survol */
+    }
+  </style>
+  

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+    <style>
+        .accueil{
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .Inscription{
+            text-align: center;
+            font-size: 1em;
+            color: orangered;		
+        }
+        h1{
+            text-align: center;
+            font-size: 1em;
+            color: orangered;
+        }
+        h2{
+            text-align: center;
+            font-size: 2em;
+            color: orangered;
+        }
+        .fieldset{
+            width: 50%;
+            margin: auto;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 1em;
+            
+        }
+        p{
+            border-radius: 5px;
+            background-color: #f1f1f1;
+            border: #f1f1f1;
+            text-transform: uppercase;
+            caret-color: auto;
+
+        }
+        p input{
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid black;
+            text-transform: uppercase;
+            caret-color: auto;
+            font: 1em sans-serif;
+        }
+        .username{
+            text-align: center;
+            font-size: 1em;
+            color: orangered;
+        }
+        .log{
+            margin: 10px;
+        }
+        .btn{
+            margin: 10px;
+            padding: 10px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn a{
+			text-decoration: none;
+		}
+        .btn:hover{
+            background-color: green;
+        }
+        footer{
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        @media screen and (max-width: 600px){
+            .accueil{
+                background-color: #f1f1f1;
+                padding: 20px;
+                margin: 10px;
+                border-radius: 10px;
+            }
+            .Inscription{
+                text-align: center;
+                font-size: 15px;
+                color: orangered;		
+            }
+            h1{
+                text-align: center;
+                font-size: 15px;
+                color: orangered;
+            }
+            h2{
+                text-align: center;
+                font-size: 15px;
+                color: orangered;
+            }
+            fieldset{
+                width: auto;
+                margin: auto;
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .username{
+                text-align: center;
+                font-size: 15px;
+                color: orangered;
+            }
+            .log{
+                margin: 10px;
+            }
+            .btn{
+                margin: 10px;
+                padding: 10px;
+                background-color: orangered;
+                color: white;
+                border: none;
+                border-radius: 5px;
+            }
+            .btn a{
+			text-decoration: none;
+		}
+            .btn:hover{
+                background-color: green;
+            }
+            footer{
+                background-color: #f1f1f1;
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+        }
+    </style>
+    <title>Inscription - Mon Site de Commerce Électronique Alimentaire</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers une feuille de style externe -->
+</head>
+<body>
+    <header class="accueil">
+        <h1 class="Inscription">ESPACE INSCRIPTION</h1>
+        <h2 class="">Bienvenue a eco-ferme eECommerce de sinematiali2025</h2>
+    </header>
+        
+        <form action="enregistrement.php" method="post">
+            <fieldset class="fieldset">
+            <legend class="username">INSCRIPTION</legend>
+            <p class="log">Nom:<input type="text" required name="name" placeholder="Nom"></P>
+            <p class="log">Prénom:<input type="text" required name="first_name" placeholder="Prénom"></P>
+            <p class="log">Date de naissance:<input type="date" required name="birth_date" placeholder="Date de naissance"></P>
+            <p class="log">Sexe:<select name="" id="" disabled="disabled">
+                <option value="m">M</option>
+                <option value="f">F</option>
+            </select></p>
+            <p class="log">Nom d'utilisateur:<input type="text" required name="username" placeholder="nom utilisateur"></P>
+            <P class="log">Adresse e-mail :<input type="email" required name="email"placeholder="email"></P>
+            <P class="log">Téléphone :<input type="tel" required name="phone"placeholder="Téléphone"></P>
+            <P class="log">Pays :<input type="text" required name="country"placeholder="Pays"></P>
+            <P class="log">Ville :<input type="text" required name="city"placeholder="Ville"></P>
+            <P class="log">Code postal :<input type="text" required name="postal_code"placeholder="Quartier ou village"></P>
+            <P class="log">Mot de passe :<input type="password" required name="password"placeholder="Mot de passe" maxlength="8"></P>
+            <P class="log">Confirmez le mot de passe :<input type="password" required name="confirm_password"placeholder="Confirmer le Mot de passe" maxlength="8"></P>
+            <button class="btn" type="submit">Inscription</button><button class="btn" type="reset">Annulez</button>
+            <p class="btn"><a href="./connexion.html">CONNECTEZ-VOUS</a></p>
+            </fieldset>
+        </form>
+    <footer>
+        <p>&copy; 2025 Mon Site de Commerce Électronique Alimentaire. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

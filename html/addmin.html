@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color: seashell;
+            border-radius: 15px;
+        }
+        .tete{
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20pX 5%;
+            background-color: orangered;
+            border: 1px solid orangered;
+            width: 100%;
+             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .menu{
+            display: none;
+        }
+        .nav-bar{
+            padding: 0px;
+            margin: 0px;
+            border-radius: 15px;
+            background-color: white;
+            display: flex;
+             justify-content: space-between;
+            align-items: center;
+        }
+        ul{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        ul li{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: orangered;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        }
+        li{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: orangered;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+        /*---passage de la souris*/
+        ul li:hover{
+            background-color: green;
+        }
+        .nav-bar ul li a:hover{
+            background-color: green;
+            text-decoration: underline;
+        }
+       /*---fin passage de la souris*/
+       /*---pour les tablette et android*/
+       @media screen and (max-width: 600px){
+           .tete{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               padding: 10px 2%;
+               background-color: orangered;
+               border: 1px solid orangered;
+               width: 100%;
+               box-shadow: 0 0 10px rgba(0,0,0,0.1);
+           }
+           .menu{
+               display: block;
+               font-size: 1.5em;
+               color: black;
+           }
+           .nav-bar{
+               padding: 0px;
+               margin: 0px;
+               border-radius: 5px;
+               background-color: white;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+           }
+           ul{
+               padding: 0px;
+               margin: 0px;
+               list-style: none;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+           }
+           ul li{
+               padding: 5px;
+               margin: 5px;
+               border-radius: 5px;
+               background-color: orangered;
+               color: white;
+               font-size: 1em;
+               font-weight: bold;
+               text-transform: uppercase;
+               text-align: center;
+               box-shadow: 0 0 10px rgba(0,0,0,0.1);
+           }
+           li{
+               padding: 10px;
+               margin: 10px;
+               border-radius: 10px;
+               background-color: orangered;
+               color: white;
+               font-size: 1em;
+               font-weight: bold;
+               text-transform: uppercase;
+               text-align: center;
+               box-shadow: 0 0 10px rgba(0,0,0,0.1);
+           }
+           li a{
+               text-decoration: none;
+               color: white;
+           }
+           /*---passage de la souris*/
+           ul li:hover{
+               background-color: green;
+           }
+           .nav-bar ul li a:hover{
+               background-color: green;
+               text-decoration: underline;
+           }
+           /*---fin passage de la souris*/
+        
+       } 
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header class="tete">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">ajouter un produit</a></li>
+                <li><a href="#">supprimer un produit</a></li>
+                <li><a href="#">modiffier un produit</a></li>
+                <li><a href="#">Ajouter un utilisateur</a></li>
+                <li><a href="#">ajouter restaurant</a></li>
+                <li><a href="./page_tableau_de_bord.html">tableau de bord</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

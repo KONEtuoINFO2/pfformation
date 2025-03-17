@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylecss/index.css">
+    <link rel="stylesheet" href="./stylecss/csspresentationproduit.css">
+    <link rel="stylesheet" href="./stylecss/cssmenu-vertical.css">
+    <link rel="stylesheet" href="./stylecss/cssconnexion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js">
+    <title>ECO-FERME</title>
+    <script src="./stylesj/jsconnexion.js"></script>
+</head>
+<body>
+    
+    <header class="tete">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+            <li> <a href="index.tml">BETDABALY</a></li>
+           <li> <a href="index.html"><i class="fa-solid fa-house"></i>ACCEUIL</a></li>
+            <li><a href="index.html">DABALY </a></li>
+              <li><a href="#"><select name="" id="">
+                <option><a href="#">CONTACTER</a></option>
+                <OPtion><a href="#">E-MAIL</a></OPtion>
+                <OPtion><a href="#">WHTSAP</a></OPtion>
+                <OPtion><a href="#">FACE BOOK</a></OPtion>
+                <OPtion><a href="#">TWITTER</a></OPtion>
+                <OPtion><a href="#">INSTAGRAM</a></OPtion>
+                <OPtion><a href="#">TELEPHONIE</a></OPtion></select>
+                </a></li>
+        
+            <li><a href="#" id="openLoginPopup"><i class="fa-solid fa-circle-user"></i>CONNEXION</a></li>
+           <li><a href="#"><input type="search" name="" id="" placeholder="recherche"><button><i class="fa-solid fa-magnifying-glass"></i></button> </a></li>
+           <li><a href="#"><i class="fas fa-user"></i></a></li>
+            <li> <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+       <!-- Formulaire de connexion -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="loginPopup">
+        <span class="close" id="closeLoginPopup">&times;</span>
+        <form id="loginForm">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="submitLoginForm()">Connexion</button>
+        </form>
+        <button id="openSignupPopup">Créer un compte</button>
+        <button id="closeLoginForm">Fermer</button>
+    </div>
+
+    <!-- Formulaire d'inscription -->
+    <div class="popup" id="signupPopup">
+        <span class="close" id="closeSignupPopup">&times;</span>
+        <form id="signupForm">
+            <label for="fullName">Nom complet :</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <label for="newUsername">Nom d'utilisateur :</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <label for="newPassword">Mot de passe :</label>
+            <input type="password" id="newPassword" name="newPassword" required minlength="8">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="contact">Contact :</label>
+            <input type="text" id="contact" name="contact" required maxlength="8">
+            <label for="address">Adresse :</label>
+            <input type="text" id="address" name="address" required>
+            <label for="city">Ville :</label>
+            <input type="text" id="city" name="city" required>
+            <label for="photo">Photo :</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            <button type="button" onclick="submitSignupForm()">Créer un compte</button>
+        </form>
+        <button id="closeSignupForm">Fermer</button>
+    </div>
+
+    <script src="./stylesj/jsconnexion.js"></script>
+    
+    <main class="section-principale">
+      <section class="menu-vertical">
+        <div class="recherche">    
+            <button type="submit" class="reche" ><i class="fa-solid fa-magnifying-glass" ></i><input type="search" name="search" id="reche" placeholder="Recherche ici un plat ou region">
+            </button> 
+        </div>
+          </div>
+        <div class="titre">
+            <p>TOP DES DABALY SENOUFO  </p>
+            <div class="sous-titre">
+                <button>DABALY DU PORO</button><br><br>
+                <button>DABALY DU TCHOLOGO</button><br><br>
+                <button>DABALY DU BAGOUE</button><br><br>
+                <button>DABALY DU AMBOLE</button><br><br>
+                <button>DABALY CEREMONIE</button>
+            </div>
+        </div>
+        <div class="titre">
+            <p>TOP DES DABALY  AKAN</p>
+           <div class="sous-titre">
+                <button>DABALY AKAN DU CENTRE</button><br><br>
+                <button>DABALY AKAN DU SUD</button><br><br>
+                <button>DABALY AKAN DU NORD</button><br><br>
+                <button>DABALY BAGOUE</button><br><br>
+                <button>DABALY CEREMONIE</button>    
+            </div>
+        </div>
+        <div class="titre">
+            <p>TOP DES DABALY  DE L'OUEST</p>
+            <div class="sous-titre">
+                <button>DABALY YACOUBA</button><br><br>
+                <button>DABALY GUERRE</button><br><br>
+                <button>DABALY CEREMONIE</button>   
+            </div>
+        </div>
+        
+        <div class="titre">
+            <p>TOP DES DABALY  EXTERIEUR</p>
+            <div class="sous-titre">
+                <button> DABALY ARABE</button><br><br>
+                <button>DABALY EURROPPEEN</button><br><br>
+                <button>DABALY ASIATIQUE</button><br><br>
+                <button>DABALY AFRICAIN</button>   
+            
+            </div>
+        </div>
+        <div class="titre">
+            <p>TOP DES DABALY  DE CEREMONIES</p>
+            <div class="sous-titre">
+                <button> DABALY POUR MARIAGE</button><br><br>
+                <button>DABALY POUR ANIVERSAIRE</button><br><br>
+                <button>DABALY POUR BATAIME</button><br><br>
+                <button>DABALY POUR DINER GALANT</button>   
+            
+            </div>
+        </div>
+        
+    </section>
+       <section class="affiche">
+        
+        <div class="annonce">
+           <p>Bienvenue a BetDabaly Eco-Ferme-Dabaly de Sinematiali ton Dabaly c'est notre affaire,Ici c'est le Dabaly.</p>
+        </div>
+    
+        <div class="plats">
+            <div class="p">
+              <p class="product-price">6 500 FCFA</p>
+              <img src="./image_ivoirienne/kaba1.jpeg" alt="Produit" class="product-image">
+              <div class="product-description">
+                Ce plat est de grande qualité et produit avec farine de maïs blanc. Découvrez-le maintenant !
+              </div>
+              <button class="product-button">Commandez ici</button>
+            </div>
+            <div class="p">
+              <p class="product-price">5 000 FCFA</p>
+              <img src="./image_ivoirienne/kaba2.webp" alt="Produit" class="product-image">
+              <div class="product-description">
+                Profitez de ce produit exceptionnel à un prix avantageux.
+              </div>
+              <button class="product-button">Commandez ici</button>
+            </div>
+            <div class="p">
+              <p class="product-price">7 200 FCFA</p>
+              <img src="./image_ivoirienne/kaba5.jpg" alt="Produit" class="product-image">
+              <div class="product-description">
+                Qualité et design réunis dans ce superbe article.
+              </div>
+              <button class="product-button">Commandez ici</button>
+            </div>
+            <div class="p">
+              <p class="product-price">4 500 FCFA</p>
+              <img src="./image_ivoirienne/maxresdefault.jpg" alt="Produit" class="product-image">
+              <div class="product-description">
+                Qualité et design réunis dans ce superbe article.
+              </div>
+              <button class="product-button">Commandez ici</button>
+            </div>
+          <div class="p">
+            <p class="product-price">4 500 FCFA</p>
+            <img src="./image_ivoirienne/kaba6.webp" alt="Produit" class="product-image">
+            <div class="product-description">
+              Qualité et design réunis dans ce superbe article.
+            </div>
+            <button class="product-button">Commandez ici</button>
+        </div>
+        <div class="p">
+            <p class="product-price">4 500 FCFA</p>
+            <img src="./iamges/p8.jpg" alt="Produit" class="product-image">
+            <div class="product-description">
+              Qualité et design réunis dans ce superbe article.
+            </div>
+            <button class="product-button">Commandez ici</button>
+          </div> 
+        </section>
+    </main>
+    
+    <footer class="container-f">
+        <div>
+            
+            <p style="color: white;background-color: blue;">&copy; 2025 ticeinfo2. Tous droits réservés.</p>
+            
+        </div>
+    </footer>
+    
+</body>
+</html>

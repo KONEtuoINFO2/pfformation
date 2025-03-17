@@ -1,0 +1,21 @@
+.menu-vertical {
+    width: 250px;
+    height: 100vh; /* Hauteur de la barre de navigation égale à la hauteur de la fenêtre */
+    overflow-y: auto; /* Ajouter une barre de défilement verticale si nécessaire */
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.recherche, .titre {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+.sous-titre button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}

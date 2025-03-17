@@ -1,0 +1,129 @@
+/* Style pour la section affichant les annonces */
+.affiche {
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+
+/* Style pour le message d'annonce */
+.annonce {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: orangered;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour la section contenant tous les produits */
+.plats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  
+  gap: 15px;
+}
+
+/* Style du prix */
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Conteneur individuel pour chaque produit */
+.p {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+/* Style de l'image */
+.product-image {
+  width: 100%;
+  max-height: 300px; /* Fixez une hauteur uniforme pour toutes les images */
+  object-fit: cover; /* Ajuste l'image pour qu'elle remplisse parfaitement la zone */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Description affichée au survol */
+.product-description {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  border-radius: 5px;
+}
+
+.p:hover .product-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bouton de commande */
+.product-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.product-button:hover {
+  background-color: darkorange;
+}
+
+/* Responsive: Médias queries pour petits écrans */
+@media (max-width: 768px) {
+  .product-description {
+      font-size: 12px;
+  }
+
+  .product-button {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .p {
+      padding: 10px;
+  }
+
+  .product-description {
+      font-size: 10px;
+      padding: 8px;
+  }
+
+  .product-button {
+      padding: 6px 10px;
+      font-size: 12px;
+  }
+}
