@@ -6,7 +6,7 @@
             align-items: center;
             background-color: white;
             padding: 10px 20px;
-            color: green;
+            color: black;
             border-radius: 15px;
             align-items: center;
         }
@@ -24,7 +24,7 @@
             padding: 10px;
             
             border-radius: 10px;
-            background-color: orangered;
+            background-color: #ff6600;
             color: white;
             font-size: 1em;
             font-weight: bold;
@@ -40,15 +40,15 @@
             transition: color 0.3s;
         }
         .nav-links li:hover{
-            background-color: green;
+            background-color: #ffd700;
             text-decoration: underline;
-            color: white;
+            color: black;
         }
         
         .nav-links a:hover {
-            background-color: green;
+            background-color: #ffd700;
             text-decoration: underline;
-            color: white;
+            color: black;
         }
         
         /* Style pour le bouton menu (visible uniquement sur petits écrans) */

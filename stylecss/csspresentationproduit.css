@@ -8,7 +8,7 @@
 .annonce {
   margin-bottom: 20px;
   padding: 20px;
-  background-color: orangered;
+  background-color: #ff6600;
   border: 1px solid #ddd;
   border-radius: 10px;
   text-align: center;
@@ -89,7 +89,7 @@
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background-color: orangered;
+  background-color: #ff6600;
   border: none;
   border-radius: 5px;
   cursor: pointer;

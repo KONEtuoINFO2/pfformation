@@ -19,7 +19,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: orangered;
+    background-color: #ff6600;
     z-index: 1000;
     border: 1px solid ;
      box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -39,7 +39,7 @@ body{
     grid-template-columns : 25% 75%;
 }
 .recherche{
-    background-color: orangered;
+    background-color:#ff6600;
     padding: 1% 1% 10% 1%;
 }
 .reche{
@@ -55,17 +55,17 @@ input{
     padding: 5px;
 }
 .menu-vertical{
-   background-color: orangered;
+   background-color: #ff6600;
    padding: 10% 5% 0% 5%;
    margin: 0% 0% 0% 0%;
 }
 .titre{
-    background-color:orangered;
+    background-color:#ff6600;
     padding: 0% 0% 0% 0%;
     width: auto;
 }
 .titre p{
-  background-color: orangered;
+  background-color: #ff6600;
   padding: 5% 0% 5% 0%;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -79,7 +79,7 @@ input{
    text-align: center;
 }
 .sous-titre button{
-    background-color: orangered;
+    background-color: #ff6600;
     padding: 5% 0% 5% 0%;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -95,7 +95,7 @@ input{
     text-align: center;
 }
 .annonce{
-    background-color: orangered;
+    background-color: #ff6600;
     border: 1px solid black;
     border-radius: 30px;
     padding: 0% 0% 5% 0%;
@@ -119,7 +119,7 @@ input{
 }
 
 .plats p{
-    background-color: orangered;
+    background-color: #ff6600;
     padding: 5% 5% 5% 5%;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -130,7 +130,7 @@ input{
     padding: 5% 5% 5% 5%;
     width: 400px;
     height: 600pw;
-    border: 2px solid orangered;
+    border: 2px solid #ff6600;
     border-radius: 15px;
     border-radius: 50px;
 }
@@ -139,7 +139,7 @@ input{
 footer {
     text-align: center;
     padding: 15px;
-    background-color: orangered;
+    background-color: #ff6600;
     color: white;
     position: relative;
 }
