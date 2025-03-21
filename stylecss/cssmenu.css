@@ -1,0 +1,19 @@
+.menu-container {
+    width: 300px; /* Largeur visible du menu */
+    overflow-x: auto; /* Permet le défilement horizontal */
+    white-space: nowrap; /* Maintient les éléments sur une seule ligne */
+    border: 1px solid #ccc; /* Pour la visibilité */
+  }
+  
+  .menu {
+    display: inline-flex; /* Aligne les éléments horizontalement */
+  }
+  
+  .item {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    flex: 0 0 auto; /* Les éléments ne se réduisent pas */
+  }
+  

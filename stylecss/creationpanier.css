@@ -1,0 +1,34 @@
+#panier-summary {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  #checkout-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #checkout-button:hover {
+    background-color: darkred;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  
+  

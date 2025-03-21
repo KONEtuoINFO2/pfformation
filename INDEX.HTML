@@ -7,39 +7,38 @@
     <link rel="stylesheet" href="./stylecss/csspresentationproduit.css">
     <link rel="stylesheet" href="./stylecss/cssmenu-vertical.css">
     <link rel="stylesheet" href="./stylecss/cssconnexion.css">
+    <link rel="stylesheet" href="./stylecss/menuresponsive.css">
+    <link rel="stylesheet" href="./stylecss/creationpanier.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js">
     <title>ECO-FERME</title>
-    <script src="./stylesj/jsconnexion.js"></script>
+    
+    <script src="./stylesj/jspagemenuresponsive.js"></script>
+    <script src="./stylesj/jspanier.js"></script>
 </head>
 <body>
     
     <header class="tete">
-        <div class="menu">
-            <i class="fa-solid fa-bars"></i>
-        </div>
         <nav class="nav-bar">
-            <ul>
+          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
             <li> <a href="index.tml">BETDABALY</a></li>
            <li> <a href="index.html"><i class="fa-solid fa-house"></i>ACCEUIL</a></li>
-            <li><a href="index.html">DABALY </a></li>
-              <li><a href="#"><select name="" id="">
-                <option><a href="#">CONTACTER</a></option>
-                <OPtion><a href="#">E-MAIL</a></OPtion>
-                <OPtion><a href="#">WHTSAP</a></OPtion>
-                <OPtion><a href="#">FACE BOOK</a></OPtion>
-                <OPtion><a href="#">TWITTER</a></OPtion>
-                <OPtion><a href="#">INSTAGRAM</a></OPtion>
-                <OPtion><a href="#">TELEPHONIE</a></OPtion></select>
-                </a></li>
-        
+           <li><a href="#services">Services</a></li>
+           <li><a href="#about">À propos</a></li>
+            <li><a href="./html/page_contact.html">CONTACT</a></li>
             <li><a href="#" id="openLoginPopup"><i class="fa-solid fa-circle-user"></i>CONNEXION</a></li>
-           <li><a href="#"><input type="search" name="" id="" placeholder="recherche"><button><i class="fa-solid fa-magnifying-glass"></i></button> </a></li>
+           <li><a href="#"><input type="search" name="" id="" placeholder="recherche">
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button> </a></li>
            <li><a href="#"><i class="fas fa-user"></i></a></li>
-            <li> <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li> <a href="javascript:void(0)" id="open-panier"><span id="nb-panier">0</span><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
+
     </header>
+    
        <!-- Formulaire de connexion -->
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="loginPopup">
@@ -81,6 +80,7 @@
     </div>
 
     <script src="./stylesj/jsconnexion.js"></script>
+   
     
     <main class="section-principale">
       <section class="menu-vertical">
@@ -140,6 +140,19 @@
         </div>
         
     </section>
+    <div id="panier-popup" class="popup">
+      <button id="close-popup" class="close-button">&times;</button> <!-- Bouton de fermeture -->
+      <div id="panier-items">
+        <!-- Les articles ajoutés apparaîtront ici -->
+      </div>
+      <div id="panier-summary">
+        <p><strong>Total Produits :</strong> <span id="total-products">0</span></p>
+        <p><strong>Prix Total :</strong> <span id="total-price">0</span> FCFA</p>
+        <button id="checkout-button">Passer à la caisse</button>
+      </div>
+    </div>
+    
+    
        <section class="affiche">
         
         <div class="annonce">
@@ -154,7 +167,10 @@
                 Ce plat est de grande qualité et produit avec farine de maïs blanc. Découvrez-le maintenant !
               </div>
               <button class="product-button">Commandez ici</button>
+              
+              
             </div>
+            
             <div class="p">
               <p class="product-price">5 000 FCFA</p>
               <img src="./image_ivoirienne/kaba2.webp" alt="Produit" class="product-image">
@@ -162,6 +178,7 @@
                 Profitez de ce produit exceptionnel à un prix avantageux.
               </div>
               <button class="product-button">Commandez ici</button>
+              
             </div>
             <div class="p">
               <p class="product-price">7 200 FCFA</p>
@@ -170,6 +187,7 @@
                 Qualité et design réunis dans ce superbe article.
               </div>
               <button class="product-button">Commandez ici</button>
+              
             </div>
             <div class="p">
               <p class="product-price">4 500 FCFA</p>
@@ -178,6 +196,7 @@
                 Qualité et design réunis dans ce superbe article.
               </div>
               <button class="product-button">Commandez ici</button>
+             
             </div>
           <div class="p">
             <p class="product-price">4 500 FCFA</p>
@@ -186,6 +205,7 @@
               Qualité et design réunis dans ce superbe article.
             </div>
             <button class="product-button">Commandez ici</button>
+           
         </div>
         <div class="p">
             <p class="product-price">4 500 FCFA</p>
@@ -194,14 +214,20 @@
               Qualité et design réunis dans ce superbe article.
             </div>
             <button class="product-button">Commandez ici</button>
+           
           </div> 
         </section>
     </main>
     
     <footer class="container-f">
-        <div>
-            
-            <p style="color: white;background-color: blue;">&copy; 2025 ticeinfo2. Tous droits réservés.</p>
+        
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        
+            <p style="color: white;background-color: orangered;">&copy; 2025 ticeinfo2. Tous droits réservés.</p>
             
         </div>
     </footer>

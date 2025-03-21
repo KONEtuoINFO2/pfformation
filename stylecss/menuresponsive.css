@@ -1,0 +1,86 @@
+
+        /* Style par défaut pour la navbar */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            color: green;
+            border-radius: 15px;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links li {
+            margin: 0 15px;
+        
+            padding: 10px;
+            
+            border-radius: 10px;
+            background-color: orangered;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        .nav-links li:hover{
+            background-color: green;
+            text-decoration: underline;
+            color: white;
+        }
+        
+        .nav-links a:hover {
+            background-color: green;
+            text-decoration: underline;
+            color: white;
+        }
+        
+        /* Style pour le bouton menu (visible uniquement sur petits écrans) */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Media Query pour les écrans plus petits */
+        @media screen and (max-width: 768px) {
+            .menu-toggle {
+                display: block; /* Affiche l'icône du menu hamburger */
+            }
+        
+            .nav-links {
+                display: none; /* Masque les liens de navigation par défaut */
+                flex-direction: column; /* Dispose verticalement les éléments */
+                background-color: gray;
+                position: absolute;
+                top: 60px; /* Ajuste selon la hauteur de votre barre */
+                right: 0;
+                width: 100%; /* Occupe toute la largeur */
+            }
+        
+            .nav-links.open {
+                display: flex; /* Affiche le menu lorsque ouvert */
+            }
+        
+            .nav-links li {
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+        
