@@ -191,21 +191,24 @@ footer .social-icons a:hover {
 /* Responsiveness */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: none; /* Masqué par défaut */
         flex-direction: column;
         background-color: #ff6600;
         position: absolute;
         top: 60px;
         right: 0;
         width: 200px;
-        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex; /* Affiche la navigation quand active */
     }
 
     .menu-toggle {
         display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
     }
 }
