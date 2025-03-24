@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu vertical par défaut */
+#menu-vertical {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color:  #ff6600;
+    color: white;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.recherche {
+    margin-bottom: 20px;
+}
+
+.reche input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.titre {
+    margin-bottom: 15px;
+}
+
+.titre p {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.sous-titre button {
+    display: block;
+    width: 100%;
+    background-color:  #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.sous-titre button:hover {
+    background-color: #ffd700;
+}
+
+/* Transition vers menu horizontal sur petits écrans */
+@media (max-width: 768px) {
+    #menu-vertical {
+        flex-direction: row;
+        position: static;
+        height: auto;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0;
+    }
+
+    .titre {
+        margin: 0;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .titre p {
+        font-size: 16px;
+        border-bottom: none;
+        margin: 0;
+        padding: 0 5px;
+        color: white;
+    }
+
+    .sous-titre button {
+        display: inline-block;
+        margin: 0 5px;
+        padding: 10px 15px;
+        white-space: nowrap;
+        width: auto;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        position: sticky;
+        background-color: #ff6600;
+    }
+
+    .btn {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background-color: #ffd700;
+    }
+}
