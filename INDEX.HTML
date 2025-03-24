@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="./stylecss/cssconnexion.css">
     <link rel="stylesheet" href="./stylecss/menuresponsive.css">
     <link rel="stylesheet" href="./stylecss/creationpanier.css">
+    <link rel="stylesheet" href="./stylecss/cssmenu-responsive-horizontale.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js">
     <title>ECO-FERME</title>
     
     <script src="./stylesj/jspagemenuresponsive.js"></script>
     <script src="./stylesj/jspanier.js"></script>
+    <script src="./stylesj/jsmenuresponsive-horizontal.js"></script>
 </head>
 <body>
     
@@ -83,7 +85,8 @@
    
     
     <main class="section-principale">
-      <section class="menu-vertical">
+      
+      <section class="menu-vertical" id="menu-vertical">
         <div class="recherche">    
             <button type="submit" class="reche" ><i class="fa-solid fa-magnifying-glass" ></i><input type="search" name="search" id="reche" placeholder="Recherche ici un plat ou region">
             </button> 
@@ -135,10 +138,17 @@
                 <button>DABALY POUR ANIVERSAIRE</button><br><br>
                 <button>DABALY POUR BATAIME</button><br><br>
                 <button>DABALY POUR DINER GALANT</button>   
-            
             </div>
-        </div>
-        
+          </div>
+          <div class="titre">
+            <p>TOP DES DABALY  DE FETES</p>
+            <div class="sous-titre">
+                <button> DABALY POUR NOEL</button><br><br>
+                <button>DABALY POUR PAQUES</button><br><br>
+                <button>DABALY POUR RAMADAN</button><br><br>
+                <button>DABALY POUR TABASKI</button>
+            </div>
+          </div>
     </section>
     <div id="panier-popup" class="popup">
       <button id="close-popup" class="close-button">&times;</button> <!-- Bouton de fermeture -->
@@ -151,8 +161,6 @@
         <button id="checkout-button">Passer à la caisse</button>
       </div>
     </div>
-    
-    
        <section class="affiche">
         
         <div class="annonce">

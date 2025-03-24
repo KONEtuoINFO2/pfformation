@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Vertical Gauche</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #menu-vertical {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            overflow-y: auto;
+            padding: 10px;
+        }
+        .recherche {
+            margin-bottom: 20px;
+        }
+        .reche {
+            display: flex;
+            align-items: center;
+            background-color: #444;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            color: #fff;
+        }
+        .reche input {
+            flex: 1;
+            border: none;
+            margin-left: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            outline: none;
+        }
+        .titre {
+            margin-bottom: 15px;
+        }
+        .titre p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+        }
+        .sous-titre button {
+            width: 100%;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: left;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .sous-titre button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <section class="menu-vertical" id="menu-vertical">
+        <div class="recherche">    
+            <button type="submit" class="reche">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" name="search" id="reche" placeholder="Recherche ici un plat ou région">
+            </button> 
+        </div>
+        <div class="titre">
+            <p>TOP DES DABALY SENOUFO</p>
+            <div class="sous-titre">
+                <button>DABALY DU PORO</button>
+                <button>DABALY DU TCHOLOGO</button>
+                <button>DABALY DU BAGOUE</button>
+                <button>DABALY DU AMBOLE</button>
+                <button>DABALY CEREMONIE</button>
+            </div>
+        </div>
+        <!-- Ajoutez les autres sections ici -->
+    </section>
+</body>
+</html>
