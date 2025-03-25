@@ -135,32 +135,40 @@ input{
     border-radius: 50px;
 }
 
-/* Style du footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #ff6600;
+container-f {
+    background-color: #ff6600; 
     color: white;
-    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
 }
 
-footer p {
-    margin: 10px 0;
-}
-
-footer .social-icons {
+.social-icons {
+    background-color: #ff6600;
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-footer .social-icons a {
+.social-icons a {
     color: white;
-    font-size: 24px;
     text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-footer .social-icons a:hover {
-    color: #ffd700;
+.social-icons a:hover {
+    color: #FFD700; 
+    transform: scale(1.2); 
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    color: aliceblue;
 }
